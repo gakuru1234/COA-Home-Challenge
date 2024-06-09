@@ -1,0 +1,71 @@
+body {
+    font-family: 'Cormorant Garamond', sans-serif;
+    margin: 0;
+    padding: 0;  
+    background: #114429;
+}
+
+h1 {
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+    color: beige;
+    font-size: 3em;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s, filter 0.3s;
+}
+.text {
+    position: absolute;
+    bottom: 10px;
+    color: greenyellow;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.container img {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.container:hover img {
+    transform: scale(1.1);
+}
+
+.container:hover img{
+    filter: brightness(0.4);
+}
+
+
+.container:hover .text {
+    opacity: 1;
+}
+.container .title{
+    position: absolute;
+    top: 40%;
+
+}
+.container .title h1{
+    position: fixed;
+}
+.container:hover .title{
+    opacity: 1;
+}
